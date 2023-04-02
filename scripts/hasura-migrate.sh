@@ -1,8 +1,4 @@
 #!/bin/bash
-
-# Hasura CLIをインストールする
-yarn || exit
-
 # configファイルのあるディレクトリに移動
 cd ../hasura || exit
 
