@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Hasura CLIをインストールする
-yarn
+yarn || exit
 
 # configファイルのあるディレクトリに移動
 cd ../hasura || exit
 
 # マイグレーション実行とメタデータの適用
-hasura deploy --disable-interactive
+npx hasura deploy --disable-interactive
